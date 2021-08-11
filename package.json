@@ -1,0 +1,23 @@
+{
+  "name": "gosvelte",
+  "version": "1.0.0",
+  "description": "Svelte build step for bundle separate js and css files.",
+  "main": "src/main.go",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "contributors": [
+    "Anton Fridlund <af222xh@student.lnu.se>"
+  ],
+  "author": "",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "rollup": "^2.3.4",
+    "@rollup/plugin-node-resolve": "^11.0.0",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-svelte": "^7.0.0",
+    "rollup-plugin-terser": "^7.0.0",
+    "svelte": "^3.0.0"
+  }
+}
