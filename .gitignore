@@ -5,7 +5,7 @@
 ### Svelte build files ###
 
 /src/build/**
-!/src/build/index.html
+!/src/build/template.html
 
 ### Go ###
 # Binaries for programs and plugins
