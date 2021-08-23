@@ -7,8 +7,7 @@ FROM node:16.6.1-alpine3.14 AS svelte-builder
 
 WORKDIR /
 COPY . .
-RUN npm install
-RUN npm run build
+RUN npm install && npm run build
 
 ##
 ## Build Golang
@@ -18,8 +17,7 @@ FROM golang:1.16.7-alpine3.14 AS go-builder
 
 WORKDIR /
 COPY src .
-RUN go mod download
-RUN CGO_ENABLED=0 GOOS=linux go build -o server
+RUN go mod download && CGO_ENABLED=0 GOOS=linux go build -o server
 
 ##
 ## Clean build
