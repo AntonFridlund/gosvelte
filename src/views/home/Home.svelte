@@ -2,6 +2,10 @@
 	export let name
 </script>
 
+<svelte:head>
+	<title>Home</title>
+</svelte:head>
+
 <main>
 	<h1>{name}!</h1>
 	<p>Visits the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
